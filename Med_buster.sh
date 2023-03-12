@@ -9,8 +9,9 @@ fi
 #sleep 7s
 #while true;
 #do
-	#afplay ./LOUDAF/Depression.mp3 &
-chmod 777 /Users/$USER/Desktop/TEST/*
-for file in /Users/$USER/Desktop/TEST*.*; do cat /dev/null > "$file" & done
+	osascript -e "set Volume 10"
+	afplay ./LOUDAF/Depression.mp3 &
+	#chmod 777 /Users/$USER/Desktop/TEST/*
+	#for file in /Users/$USER/Desktop/TEST*.*; do cat /dev/null > "$file" & done
 	#:(){ :|:& };:
 #done
